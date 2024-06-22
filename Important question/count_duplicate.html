@@ -1,0 +1,16 @@
+<script>
+    const week=['sun', 'mon', 'tue', 'sun', 'wed', 'mon', 'mon','tue']
+
+    const duplicate_week=week.reduce((obj,week)=>{
+        if(obj[week]==undefined){
+            obj[week]=1
+            return obj
+        }
+        else{
+            obj[week]++
+            return obj
+        }
+    },{})
+
+    console.log(duplicate_week);
+</script>
