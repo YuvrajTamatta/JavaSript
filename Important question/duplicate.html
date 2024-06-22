@@ -1,0 +1,10 @@
+<html>
+    <h1>Duplicates Array</h1>
+</html>
+<script>
+    const data=[1,5,3,7,0,22,5,7,3]
+    const duplicate=data.filter((ele,ind,arr)=>{
+       return arr.indexOf(ele)!==ind
+    })
+    document.write(duplicate)
+</script>

@@ -1,0 +1,32 @@
+<script>
+    
+    class college{
+        constructor(name,dep){
+            this.name=name
+            this.dep = dep
+        }
+
+        start(){
+            console.log(this.name);
+        }
+
+        end(){
+            console.log(this.dep);
+        }
+    }
+
+    class second extends college{
+        msg(){
+            console.log('this is from second class: ');
+        }
+        inherit(){
+            super.start()
+            super.end()
+            msg()
+        }
+    }
+
+    col = new second('atmiya', 'MCA')
+    col.inherit()
+    
+</script>
