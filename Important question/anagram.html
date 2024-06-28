@@ -1,0 +1,17 @@
+<script>
+    const str1='Mary'
+    const str2='Army'
+
+    function hello(str1,str2){
+        let a = str1.toLowerCase()
+        let b = str2.toLowerCase()
+
+        a=a.split("").sort().join("")
+        b=b.split("").sort().join("")
+
+        return a===b
+    }
+
+    console.log(hello(str1,str2));
+   
+</script>

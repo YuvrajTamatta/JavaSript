@@ -1,11 +1,6 @@
 <script>
     const week =['mon', 'tue', 'wed', 'thur']
-    const find= 'mone'
-    if(week.includes(find)){
-        console.log("yes found it");
-    }
-    else{
-        console.log("Not found");
-    }
-    
+    const find= ['mon', 'sat']
+   const newvavl=week.some((ele)=>find.includes(ele))
+   console.log(newvavl);
 </script>
